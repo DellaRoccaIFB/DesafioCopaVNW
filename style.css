@@ -8,7 +8,7 @@
 
 nav{
     display: flex;
-    background-color: aqua;
+    background-color: white;
     align-items: center;
 }
 .copa{
@@ -31,19 +31,19 @@ nav{
 
 #BannerBGImage {
     width: 100%;
-    height: 90vh;
+    height: 50vh;
     background-image: url("imagens/18.png");
     background-color: grey;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 0 -33vh;
     /* background-attachment: fixed; */
     display: flex;
     align-items: center;
 }
 
 .tituloBanner {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;

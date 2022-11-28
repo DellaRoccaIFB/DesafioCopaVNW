@@ -6,43 +6,71 @@
     padding: 0;
 }
 
-nav{
+/* HEADER */
+
+Header {
+    width: 100%;
+    height: 15vh;
     display: flex;
-    background-color: white;
-    align-items: center;
+    /* border: solid 3px green; */
 }
-.copa{
-    font-size: 2rem;
+
+#ContainerTituloHeader {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.TituloHeader {
+    width: 35vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
-    margin-left: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: solid 2px blue;
 }
-.QuatroBandeiras{
-    margin-left: 5rem;
+
+#ContainerQuatroBandeirasHeader {
+    height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    width: 70vw;
+    justify-content: flex-end;
+    border: solid 2px red;
 }
-.Bandeiras{
-    height: 7rem;
+
+.QuatroBandeirasHeader {
+    /* display: flex;
+    justify-content: space-between; */
+    border: solid 3px green;
+}
+
+.QuatroBandeirasHeader img{
+    width: 150px;
 }
 
 /* MAIN */
 
 #BannerBGImage {
     width: 100%;
-    height: 50vh;
-    background-image: url("imagens/18.png");
+    height: 35vw;
+    background-image: url("imagens/18\(recortado\).png");
     background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -33vh;
+    /* background-position: 0 -33vh; */
     /* background-attachment: fixed; */
     display: flex;
     align-items: center;
+    padding: 0 0 0 4rem;
 }
 
 .tituloBanner {
+    width: 40vw;
     font-size: 4rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -52,11 +80,19 @@ nav{
 
 #ContainerBandeiras {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 0 7rem 0 7rem;
+    row-gap: 2rem;
+    padding: 3rem 2rem 3rem 2rem;
 }
 
 #ContainerBandeiras img{
-    width: 300px;
+    width: 250px;
+    transition: 1s;
+}
+
+#ContainerBandeiras img:hover{
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1);
 }
